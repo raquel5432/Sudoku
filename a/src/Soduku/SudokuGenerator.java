@@ -6,7 +6,7 @@ package Soduku;
 
 /**
  *
- * @author trigo
+ * @author ALISSONRAQUELMARTINE
  */
 import java.util.Random;
 
