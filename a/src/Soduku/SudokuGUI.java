@@ -28,6 +28,15 @@ public class SudokuGUI extends JFrame {
                 celdas[i][j] = new JTextField();
                 celdas[i][j].setHorizontalAlignment(JTextField.CENTER);
                 celdas[i][j].setFont(new Font("Arial", Font.BOLD, 20));
+
+                
+                int top = (i % 3 == 0) ? 3 : 1;
+                int left = (j % 3 == 0) ? 3 : 1;
+                int bottom = (i == 8) ? 3 : 1;
+                int right = (j == 8) ? 3 : 1;
+
+                celdas[i][j].setBorder(BorderFactory.createMatteBorder(top, left, bottom, right, Color.BLACK));
+
                 panel.add(celdas[i][j]);
             }
         }

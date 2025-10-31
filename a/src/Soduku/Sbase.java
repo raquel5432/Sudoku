@@ -10,6 +10,6 @@ package Soduku;
  * @author CarlosXl
  */
 public abstract class Sbase {
-    protected int sz = 9;
+    protected final int sz = 9;
     protected int tablero[][] = new int[sz][sz];
 }
